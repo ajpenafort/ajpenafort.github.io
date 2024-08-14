@@ -19,8 +19,9 @@ https://cdn.jsdelivr.net/npm/solid-js@1.8.21/dist/solid.min.js
             <div id="root"></div>
             <script src="https://firebasestorage.googleapis.com/v0/b/dronline-372a0.appspot.com/o/dronline.umd.js?alt=media&token=fd2608d2-4aa0-41b4-9fbf-c3f483f447d7"></script>
             <script>
+                console.log(window.solid); // Check if 'solid' is available on the window object
                 const root = document.getElementById('root');
-                Solid.render(() => DrOnlineBookingSystem(), root);
+                window.solid.render(() => DrOnlineBookingSystem(), root); // Use window.solid instead
             </script>
         </div>
     </div>
